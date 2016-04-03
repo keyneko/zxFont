@@ -1,0 +1,10 @@
+.clearfix {
+  display: block;
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+    box-sizing: border-box;
+    clear: both;
+  }
+}
