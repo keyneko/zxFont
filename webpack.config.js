@@ -2,22 +2,20 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    'main': __dirname + '/src/index.js',
+    'demo': __dirname + '/src/index.js',
+    'vendors': [
+      'npm-zepto',
+    ]
   },
   output: {
     path: __dirname + '/build/',
     filename: '[name].js',
-    // filename: 'main.js',
   },
   plugins: [
     new webpack.ProvidePlugin({
-      // fetch: 'imports?this=>global!exports?global.fetch!whatwg-fetch',
-      // riot: 'riot',
-      // control: 'riotcontrol',
       $: 'npm-zepto',
-      // Utils: __dirname + '/src/utils',
     }),
-    // new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+    new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
     new webpack.optimize.UglifyJsPlugin({ 
       minimize: true, 
       mangle: true,

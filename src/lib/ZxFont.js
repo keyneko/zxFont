@@ -48,6 +48,7 @@ export default class ZxFont extends Observer{
         el.style.font = '0/0 a'
         el.style.color = 'transparent'
         el.style.visibility = 'visible'
+        el.style.opacity = '1'
 
         for(let i = 0, max = text.length; i < max; i++) {
           let code = text.charAt(i).charCodeAt()
