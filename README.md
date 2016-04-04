@@ -18,7 +18,7 @@ sample usage as follows:
 import ZxFont from './lib/ZxFont'
 
 var zxfont = new ZxFont()
-zxfont.load('font', './assets/font/')
+zxfont.load('font', './assets/font/') // the arg1 font is the font name which export by littera, you can define yourself.
 zxfont.convert('font', '.font')
 ```
 before convert:  
