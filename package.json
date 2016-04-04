@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/keyneko/zxFont",
   "dependencies": {
-    "normalize.css": "^3.0.3"
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "babel": "^5.4.7",
